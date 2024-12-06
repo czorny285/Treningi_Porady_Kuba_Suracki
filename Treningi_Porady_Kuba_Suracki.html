@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trening Piłkarski - Pozycje Defensywne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            color: #d4af37;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .button {
+            background-color: #d4af37;
+            color: #000;
+            padding: 15px 25px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            width: 200px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #b88928;
+        }
+
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #000;
+            color: #d4af37;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+            color: #b88928;
+        }
+
+        .quote span {
+            color: #fff;
+        }
+
+        .section-title {
+            color: #d4af37;
+            font-size: 28px;
+        }
+
+        .section-text {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            font-size: 18px;
+        }
+
+        .subheading {
+            font-size: 22px;
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Trening Piłkarski - Pozycje Defensywne</h1>
+</header>
+
+<div class="container">
+    <div class="button-container">
+        <button class="button" onclick="toggleContent('defender')">Środkowy Obrońca</button>
+        <button class="button" onclick="toggleContent('right-back')">Prawy Obrońca</button>
+        <button class="button" onclick="toggleContent('left-back')">Lewy Obrońca</button>
+        <button class="button" onclick="toggleContent('defensive-midfielder')">Pomocnik Defensywny</button>
+        <button class="button" onclick="toggleContent('center-midfielder')">Pomocnik Środkowy</button>
+    </div>
+
+    <div id="defender" class="content">
+        <h2 class="section-title">Środkowy Obrońca</h2>
+        <p class="section-text">Środkowy obrońca to fundament drużyny defensywnej. Jego zadaniem jest wygrywanie pojedynków powietrznych, a także przewidywanie ruchów rywala. Ponadto, to właśnie środkowy obrońca często inicjuje wyjścia drużyny do ataku, a jego rola w organizacji obrony jest nieoceniona. Wymaga to od niego nie tylko dobrego ustawienia, ale również dużej pewności siebie i komunikacji z innymi zawodnikami.</p>
+        <ul>
+            <li><strong>Przykład piłkarza:</strong> Virgil van Dijk – mistrz w wygrywaniu pojedynków powietrznych i organizowaniu obrony.</li>
+            <li><strong>Cytat:</strong> "Nie ma niczego lepszego niż poczucie, że udało ci się przewidzieć ruchy przeciwnika." – <em>Virgil van Dijk</em></li>
+        </ul>
+        <p class="quote"><span>„Piłka nożna to walka, a obrona to sztuka.” – trener Pep Guardiola</span></p>
+
+        <div class="subheading">Kluczowe Umiejętności:</div>
+        <ul>
+            <li>Wygrywanie pojedynków powietrznych.</li>
+            <li>Umiejętność czytania gry i przewidywania ruchów rywali.</li>
+            <li>Komunikacja z bramkarzem i resztą obrońców.</li>
+            <li>Wysoka koncentracja i utrzymywanie pozycji w trakcie gry.</li>
+        </ul>
+    </div>
+
+    <div id="right-back" class="content">
+        <h2 class="section-title">Prawy Obrońca</h2>
+        <p class="section-text">Prawy obrońca to kluczowa postać na boisku, łącząca rolę obrońcy i skrzydłowego. Musi nie tylko bronić, ale także angażować się w ofensywę, szczególnie przy kontratakach. Szybkość, wytrzymałość oraz umiejętność wrzutów na pole karne to cechy, które decydują o jego sukcesie. Prawy obrońca powinien również wiedzieć, kiedy podjąć ryzyko i dołączyć do ataku, by stworzyć przewagę liczebną na skrzydle.</p>
+        <ul>
+            <li><strong>Przykład piłkarza:</strong> Trent Alexander-Arnold – znany z ofensywnych rajdów oraz doskonałych wrzutów.</li>
+            <li><strong>Cytat:</strong> "Musisz być gotowy na wszystko – zarówno w obronie, jak i w ofensywie." – <em>Trent Alexander-Arnold</em></li>
+        </ul>
+        <p class="quote"><span>„Dobrzy obrońcy nie tylko bronią, ale także przewidują ruchy rywala.” – Gary Neville</span></p>
+
+        <div class="subheading">Kluczowe Umiejętności:</div>
+        <ul>
+            <li>Wysoka kondycja fizyczna i szybkość.</li>
+            <li>Doskonałe wrzutki i umiejętność dołączania do ataku.</li>
+            <li>Świadomość przestrzeni i utrzymanie równowagi pomiędzy obroną a ofensywą.</li>
+            <li>Precyzyjne wyprowadzenie piłki z obrony.</li>
+        </ul>
+    </div>
+
+    <div id="left-back" class="content">
+        <h2 class="section-title">Lewy Obrońca</h2>
+        <p class="section-text">Lewy obrońca pełni podobną rolę jak prawy, z tą różnicą, że jego zadania skupiają się na lewym skrzydle. Obok skutecznej obrony, lewy obrońca ma kluczowy wpływ na atak drużyny. Jego szybkość, umiejętność wrzucania piłek do pola karnego oraz gra w ofensywie są podstawą w wielu drużynach na najwyższym poziomie. Lewy obrońca to również gracz, który potrafi wyjść z kryzysowych sytuacji w defensywie dzięki swojej wytrwałości i technice.</p>
+        <ul>
+            <li><strong>Przykład piłkarza:</strong> Andrew Robertson – ekspert w ofensywnych rajdach i wspieraniu ataku.</li>
+            <li><strong>Cytat:</strong> "Obrona to praca zespołowa, ale nigdy nie zapominaj o swojej roli w ataku." – <em>Andrew Robertson</em></li>
+        </ul>
+        <p class="quote"><span>„Obrona jest sztuką, ale ofensywa to także praca obrońcy.” – Jamie Carragher</span></p>
+
+        <div class="subheading">Kluczowe Umiejętności:</div>
+        <ul>
+            <li>Wysokiej jakości dośrodkowania i wrzutki w pole karne.</li>
+            <li>Odporność na zmęczenie i umiejętność gryw dwóch kierunkach (obrona i atak).</li>
+            <li>Precyzyjna gra w obronie, zarówno w pojedynkach 1 na 1, jak i w defensywie drużyny.</li>
+            <li>Umiejętność dostosowywania tempa gry i podejmowania ryzyka, by wspierać ofensywę drużyny.</li>
+        </ul>
+    </div>
+
+    <div id="defensive-midfielder" class="content">
+        <h2 class="section-title">Pomocnik Defensywny</h2>
+        <p class="section-text">Pomocnik defensywny pełni rolę "dyrygenta" w defensywie drużyny, kontrolując środek pola i zabezpieczając obronę przed atakami rywali. Jego kluczowe zadania to wygrywanie pojedynków w środku pola, przechwytywanie piłek oraz efektywne wyprowadzanie piłki do ofensywy. Pomocnik defensywny to również gracz, który ma zdolność szybkiego reagowania na zmieniającą się sytuację na boisku, będąc często pierwszą linią obrony przed atakami rywali.</p>
+        <ul>
+            <li><strong>Przykład piłkarza:</strong> N'Golo Kanté – mistrz w odbiorze piłki, niezwykle dynamiczny i wytrzymały zawodnik.</li>
+            <li><strong>Cytat:</strong> "Moja rola to nie tylko odbiór piłki, ale także dawanie drużynie poczucia bezpieczeństwa." – <em>N'Golo Kanté</em></li>
+        </ul>
+        <p class="quote"><span>„Pomocnik defensywny to serce obrony, kluczowy zawodnik, który ma wpływ na tempo gry.” – Xavi Hernandez</span></p>
+
+        <div class="subheading">Kluczowe Umiejętności:</div>
+        <ul>
+            <li>Umiejętność odbioru piłki w różnych strefach boiska.</li>
+            <li>Wysoka inteligencja boiskowa i zdolność do przewidywania akcji rywala.</li>
+            <li>Wielka wytrzymałość i zdolność do biegania przez całe spotkanie.</li>
+            <li>Precyzyjne podania, które rozpoczynają akcje ofensywne drużyny.</li>
+        </ul>
+    </div>
+
+    <div id="center-midfielder" class="content">
+        <h2 class="section-title">Pomocnik Środkowy</h2>
+        <p class="section-text">Pomocnik środkowy to zawodnik, który łączy obronę z atakiem. Jego zadaniem jest utrzymanie tempa gry, odbieranie piłek oraz rozgrywanie akcji ofensywnych. Pomocnik środkowy musi być niezwykle wszechstronny – potrafić zarówno grać w defensywie, jak i atakować, współpracując z innymi pomocnikami oraz napastnikami. Umiejętność wytrzymałości i precyzyjnych podań w kluczowych momentach spotkania jest fundamentalna.</p>
+        <ul>
+            <li><strong>Przykład piłkarza:</strong> Luka Modrić – znany z doskonałego rozgrywania piłki oraz świetnego wyczucia gry w środku pola.</li>
+            <li><strong>Cytat:</strong> "Zadaniem pomocnika środkowego jest kontrolowanie tempa gry i dbanie o równowagę drużyny." – <em>Luka Modrić</em></li>
+        </ul>
+        <p class="quote"><span>„Pomocnik środkowy to motor drużyny, który odpowiada za rozgrywanie i stabilność.” – Andrea Pirlo</span></p>
+
+        <div class="subheading">Kluczowe Umiejętności:</div>
+        <ul>
+            <li>Kontrola tempa gry i utrzymanie równowagi między obroną a atakiem.</li>
+            <li>Precyzyjne podania na dużą odległość oraz wyprowadzanie piłki.</li>
+            <li>Zdolność do decydowania o losach meczu poprzez rozgrywanie akcji w kluczowych momentach.</li>
+            <li>Praca w defensywie i pomoc w odbiorze piłki w kluczowych strefach boiska.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Trening Piłkarski. Wszystkie prawa zastrzeżone.
+    Kuba Suracki 8a</p>
+</footer>
+
+<script>
+    function toggleContent(position) {
+        const sections = document.querySelectorAll('.content');
+        sections.forEach(section => {
+            if (section.id === position) {
+                section.classList.toggle('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
